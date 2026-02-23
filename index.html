@@ -369,3 +369,15 @@
   </footer>
 </body>
 </html>
+# 1️⃣ Clone (or create) a folder on your machine
+git clone https://github.com/your‑username/rondebosch-panel-beaters.git
+cd rondebosch-panel-beaters
+
+# 2️⃣ If you don’t have index.html yet, copy it here
+# (paste the HTML you received earlier into a file called index.html)
+
+# 3️⃣ Create the _headers file (note the leading underscore!)
+cat > _headers <<'EOF'
+/*
+  Basic-Auth: client:MySecretPassword123
+EOF
