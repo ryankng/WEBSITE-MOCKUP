@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/AutoRepair">
+<head>
+  <!-- ==== Basic SEO ==== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rondebosch Panel Beaters – Quality Auto Body Repair</title>
+  <meta name="description" content="Professional panel beating, spray‑painting, colour matching and collision repair in Rondebosch, Cape Town. Fast, reliable service with a 100 % satisfaction guarantee.">
+  <link rel="canonical" href="https://YOURDOMAIN.com/">
+
+  <!-- ==== Open Graph (social sharing) ==== -->
+  <meta property="og:title" content="Rondebosch Panel Beaters – Quality Auto Body Repair">
+  <meta property="og:description" content="Fast, reliable panel beating and spray‑painting in Rondebosch, Cape Town. Call us today!">
+  <meta property="og:image" content="https://YOURDOMAIN.com/og-image.jpg">
+  <meta property="og:url" content="https://YOURDOMAIN.com/">
+  <meta property="og:type" content="website">
+
+  <!-- ==== Favicons (replace if you have your own) ==== -->
+  <link rel="icon" href="https://YOURDOMAIN.com/favicon.ico">
+
+  <!-- ==== Google Font ==== -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ==== Font Awesome for icons ==== -->
+  <script src="https://kit.fontawesome.com/a2d9c3b5c4.js" crossorigin="anonymous"></script>
+
+  <!-- ==== Styles ==== -->
+  <style>
+    /* --------- Reset & Base --------- */
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background:#fff;
+    }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; display:block; }
+
+    /* --------- Layout Grid --------- */
+    .container { width:90%; max-width:1200px; margin:auto; }
+    .grid { display:grid; gap:2rem; }
+    .grid-2 { grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); }
+
+    /* --------- Header & Nav --------- */
+    header {
+      background:#222;
+      color:#fff;
+      position:sticky; top:0; z-index:10;
+    }
+    .nav {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 0;
+    }
+    .nav .logo { font-size:1.4rem; font-weight:600; }
+    .nav ul { list-style:none; display:flex; gap:1.5rem; }
+    .nav a { color:#fff; font-weight:500; transition:color .2s; }
+    .nav a:hover { color:#f9c74f; }
+
+    /* --------- Hero --------- */
+    .hero {
+      background:url('https://images.pexels.com/photos/1658688/pexels-photo-1658688.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+      color:#fff;
+      text-align:center;
+      padding:140px 0 120px;
+      position:relative;
+    }
+    .hero::after {
+      content:""; position:absolute; inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .hero .hero-content { position:relative; z-index:1; max-width:800px; margin:auto; }
+    .hero h1 { font-size:2.8rem; margin-bottom:.5rem; }
+    .hero p { font-size:1.2rem; margin-bottom:1.5rem; }
+    .hero .btn { background:#f9c74f; color:#222; padding:.9rem 2rem; border-radius:4px; font-weight:600; transition:background .2s; }
+    .hero .btn:hover { background:#e0a801; }
+
+    /* --------- Section Titles --------- */
+    .section-title {
+      text-align:center; margin-bottom:2.5rem;
+    }
+    .section-title h2 { font-size:2.2rem; color:#222; }
+    .section-title p { color:#555; max-width:600px; margin:auto; }
+
+    /* --------- About --------- */
+    .about { padding:4rem 0; background:#f4f4f4; }
+    .about .grid-2 { align-items:center; }
+    .about img { border-radius:6px; }
+
+    /* --------- Services --------- */
+    .services { padding:4rem 0; }
+    .service-card {
+      background:#fff; border:1px solid #e0e0e0; border-radius:8px;
+      text-align:center; padding:2rem 1.5rem; transition:transform .2s, box-shadow .2s;
+    }
+    .service-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 12px 24px rgba(0,0,0,.07);
+    }
+    .service-card i { font-size:2.5rem; color:#f9c74f; margin-bottom:.8rem; }
+
+    /* --------- Gallery --------- */
+    .gallery { padding:4rem 0; background:#f9f9f9; }
+    .gallery .grid-2 { grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); }
+    .gallery img { border-radius:6px; transition:transform .2s; }
+    .gallery img:hover { transform:scale(1.04); }
+
+    /* --------- Testimonials --------- */
+    .testimonials { padding:4rem 0; background:#fff; }
+    .testimonial-card {
+      background:#f1f1f1; border-radius:8px; padding:2rem; text-align:center;
+      position:relative;
+    }
+    .testimonial-card::before {
+      content:"\f10d"; font-family:"Font Awesome 5 Free"; font-weight:900;
+      font-size:2rem; color:#f9c74f; position:absolute; top:-1rem; left:50%; transform:translateX(-50%);
+    }
+    .testimonial-card p { margin-top:1.5rem; font-style:italic; }
+
+    /* --------- Contact --------- */
+    .contact { padding:4rem 0; background:#f4f4f4; }
+    .contact .grid-2 { gap:3rem; }
+    .contact .info-item { display:flex; align-items:center; gap:.8rem; margin-bottom:1rem; }
+    .contact .info-item i { font-size:1.2rem; color:#f9c74f; width:26px; }
+    .contact form { display:flex; flex-direction:column; gap:.9rem; }
+    .contact input, .contact textarea {
+      padding:.9rem 1rem; border:1px solid #ccc; border-radius:4px; font-family:inherit;
+    }
+    .contact button {
+      background:#f9c74f; color:#222; border:none; padding:.9rem 1.5rem;
+      border-radius:4px; font-weight:600; cursor:pointer; transition:background .2s;
+    }
+    .contact button:hover { background:#e0a801; }
+    .map { border:0; width:100%; height:350px; border-radius:8px; }
+
+    /* --------- Footer --------- */
+    footer { background:#222; color:#fff; padding:2rem 0; text-align:center; }
+    footer .social a { margin:0 .6rem; font-size:1.2rem; color:#fff; transition:color .2s; }
+    footer .social a:hover { color:#f9c74f; }
+    footer p { margin-top:.8rem; font-size:.9rem; }
+
+    /* --------- Responsive tweaks --------- */
+    @media (max-width:768px) {
+      .nav ul { display:none; }
+      .hero h1 { font-size:2.2rem; }
+      .hero p { font-size:1rem; }
+      .section-title h2 { font-size:2rem; }
+    }
+  </style>
+
+  <!-- ==== Structured Data (JSON‑LD) ==== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Rondebosch Panel Beaters",
+    "image": "https://YOURDOMAIN.com/logo.png",
+    "@id": "https://YOURDOMAIN.com/#business",
+    "url": "https://YOURDOMAIN.com/",
+    "telephone": "+27 21 123 4567",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Main Road",
+      "addressLocality": "Rondebosch",
+      "addressRegion": "Western Cape",
+      "postalCode": "7700",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.9681,
+      "longitude": 18.4652
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/yourbusiness",
+      "https://instagram.com/yourbusiness"
+    ]
+  }
+  </script>
+</head>
+<body itemscope itemtype="https://schema.org/AutoRepair">
+
+  <!-- ===== Header & Nav ===== -->
+  <header>
+    <div class="container nav">
+      <div class="logo" itemprop="name">Rondebosch Panel Beaters</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Fast, Reliable Panel Beating & Spray‑Painting</h1>
+      <p>We restore your vehicle to factory‑finish condition—same day estimates, colour‑matching guaranteed.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>With over <strong>15 years</strong> of experience, our team of certified technicians delivers precision panel work, OEM‑level spray‑painting, and complete collision repair. We’re proud members of the South African Automotive Repair & Body Association (SAARBA).</p>
+      </div>
+      <div class="grid grid-2">
+        <div>
+          <img src="https://images.pexels.com/photos/1154179/pexels-photo-1154179.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Our workshop">
+        </div>
+        <div>
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>Fully insured and accredited.</li>
+            <li>Colour‑matched paintwork using premium 2‑K system.</li>
+            <li>Complimentary vehicle pick‑up & drop‑off within the Cape Town Metro.</li>
+            <li>100 % satisfaction guarantee.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>From minor dents to full‑body restoration, we have the expertise and equipment to handle any repair.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="service-card">
+          <i class="fas fa-tools"></i>
+          <h4>Panel Beating & Straightening</h4>
+          <p>Precision metalworking restores the original shape of your panels.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-spray-can"></i>
+          <h4>Spray‑Painting & Colour Matching</h4>
+          <p>OEM‑quality finishes with factory‑exact colour matching.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-car-crash"></i>
+          <h4>Collision Repair</h4>
+          <p>Complete bodywork, from frame assessment to final polishing.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-clipboard-check"></i>
+          <h4>Insurance Claims Assistance</h4>
+          <p>We work directly with insurers to speed up the approval process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Work</h2>
+        <p>Take a look at some of the cars we’ve restored.</p>
+      </div>
+      <div class="grid grid-2">
+        <img src="https://images.pexels.com/photos/209872/pexels-photo-209872.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Before/After – dent repair">
+        <img src="https://images.pexels.com/photos/1548271/pexels-photo-1548271.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Colour matched repaint">
+        <img src="https://images.pexels.com/photos/663523/pexels-photo-663523.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Collision repair">
+        <img src="https://images.pexels.com/photos/967344/pexels-photo-967344.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Panel straightening">
+        <img src="https://images.pexels.com/photos/2749704/pexels-photo-2749704.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clear coat finish">
+        <img src="https://images.pexels.com/photos/1979335/pexels-photo-1979335.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury sedan repaint">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials (optional) ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+        <p>We pride ourselves on happy, repeat clients.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="testimonial-card">
+          <p>"Fast service and the paint matched perfectly. My car looks brand new!"</p>
+          <strong>- Thabo M., Rondebosch</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>"Excellent workmanship and very professional staff. Highly recommend."</p>
+          <strong>- Sarah K., Claremont</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Ready for a quote or have a question? Contact us now.</p>
+      </div>
+      <div class="grid grid-2">
+        <!-- Contact Details -->
+        <div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">123 Main Road</span>, <span itemprop="addressLocality">Rondebosch</span>, <span itemprop="addressRegion">Western Cape</span>, <span itemprop="postalCode">7700</span></span></div>
+          <div class="info-item"><i class="fas fa-phone-alt"></i> <a href="tel:+27211234567" itemprop="telephone">+27 21 123 4567</a></div>
+          <div class="info-item"><i class="fas fa-envelope"></i> <a href="mailto:info@rondeboschpanelbeaters.co.za" itemprop="email">info@rondeboschpanelbeaters.co.za</a></div>
+          <div class="info-item"><i class="fas fa-clock"></i> Mon‑Fri: 08:00 – 18:00 <br>Sat: 08:00 – 13:00</div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.5213866707366!2d18.46516631594571!3d-33.968126124053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5c6cb9f2ba3b%3A0xee0a360af4c51abc!2sRondebosch%2C%20Cape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1714451234567!5m2!1sen!2sus"
+              width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Phone (optional)">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p style="margin-top: .8rem; font-size: .85rem; color:#555;">*We use <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> to deliver form submissions to your email. No server required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container social">
+      <a href="https://facebook.com/yourbusiness" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/yourbusiness" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/yourbusiness" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> Rondebosch Panel Beaters – All Rights Reserved.</p>
+    <script>
+      // Auto‑update the copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
